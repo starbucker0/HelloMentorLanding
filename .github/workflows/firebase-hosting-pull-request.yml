@@ -19,16 +19,6 @@ jobs:
         run: npm ci
       - name: Build Next.js app
         run: npm run build
-      - name: Prepare static files for Firebase
-        run: |
-          mkdir -p public
-          cp .next/server/app/index.html public/
-          cp -r .next/static public/_next
-          # Copy blog pages if they exist
-          if [ -d ".next/server/app/blog" ]; then
-            mkdir -p public/blog
-            cp .next/server/app/blog.html public/blog/index.html 2>/dev/null || true
-          fi
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
