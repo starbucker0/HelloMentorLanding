@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 // Replace this with your actual Google Form URL
-const GOOGLE_FORM_URL = "https://forms.google.com/d/e/1FAIpQLSe_REPLACE_WITH_YOUR_FORM_ID/viewform";
+const GOOGLE_FORM_URL = "https://forms.gle/wjXgHh9WWozQHtJG7";
 
 export function Cta() {
   return (
