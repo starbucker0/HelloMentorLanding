@@ -9,10 +9,10 @@ export function Footer() {
           <div className="flex flex-col space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <Waves className="h-6 w-6 text-primary" />
-              <span className="font-bold font-headline">Web Landing</span>
+              <span className="font-bold font-headline">HelloMentor</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              The best landing page for your web app.
+              The best mentor matching platform.
             </p>
           </div>
           <div>
@@ -67,7 +67,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Web Landing. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} HelloMentor. All rights reserved.</p>
         </div>
       </div>
     </footer>

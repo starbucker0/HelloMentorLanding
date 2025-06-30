@@ -15,6 +15,9 @@ const navLinks = [
   { href: '/copy-generator', label: 'AI Tool' },
 ];
 
+// Replace this with your actual Google Form URL
+const GOOGLE_FORM_URL = "https://forms.gle/wjXgHh9WWozQHtJG7";
+
 export function Header() {
   const pathname = usePathname();
 
@@ -24,7 +27,7 @@ export function Header() {
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Waves className="h-6 w-6 text-primary" />
-            <span className="hidden font-bold sm:inline-block font-headline">Web Landing</span>
+            <span className="hidden font-bold sm:inline-block font-headline">HelloMentor</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             {navLinks.map((link) => (
@@ -56,7 +59,7 @@ export function Header() {
               <SheetContent side="left" className="pr-0">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
                   <Waves className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline">Web Landing</span>
+                  <span className="font-bold font-headline">HelloMentor</span>
                 </Link>
                 <div className="flex flex-col space-y-4 mt-6">
                   {navLinks.map((link) => (
@@ -64,16 +67,25 @@ export function Header() {
                       {link.label}
                     </Link>
                   ))}
+                  <Button asChild className="mt-4">
+                    <Link href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">
+                      Get Early Access
+                    </Link>
+                  </Button>
                 </div>
               </SheetContent>
             </Sheet>
             <Link href="/" className="flex items-center space-x-2 md:hidden">
               <Waves className="h-6 w-6 text-primary" />
-              <span className="font-bold font-headline">Web Landing</span>
+              <span className="font-bold font-headline">HelloMentor</span>
             </Link>
           </div>
           <nav className="hidden md:flex items-center">
-            <Button>Get Started</Button>
+            <Button asChild>
+              <Link href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">
+                Get Early Access
+              </Link>
+            </Button>
           </nav>
         </div>
       </div>
