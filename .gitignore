@@ -50,7 +50,6 @@ node_modules/
 # Next.js build output
 .next/
 out/
-public/
 
 # Optional npm cache directory
 .npm
