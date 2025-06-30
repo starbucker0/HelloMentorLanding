@@ -6,7 +6,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'Web Landing',
+  title: 'HelloMentor',
   description: 'A beautiful landing page for your web app.',
 };
 
