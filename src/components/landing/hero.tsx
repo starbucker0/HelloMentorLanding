@@ -13,7 +13,7 @@ export function Hero() {
           high-converting landing page for your new application.
         </p>
         <div className="flex gap-4">
-          <Button size="lg">Get Freaky for Free</Button>
+          <Button size="lg">Get Mentor for Free</Button>
           <Button size="lg" variant="outline">
             Learn More
           </Button>

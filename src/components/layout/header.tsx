@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Waves } from 'lucide-react';
@@ -26,7 +27,13 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Waves className="h-6 w-6 text-primary" />
+            <Image 
+              src="/images/logo.png" 
+              alt="HelloMentor Logo" 
+              width={32} 
+              height={32} 
+              className="h-8 w-8"
+            />
             <span className="hidden font-bold sm:inline-block font-headline">HelloMentor</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -58,7 +65,13 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="pr-0">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
-                  <Waves className="h-6 w-6 text-primary" />
+                  <Image 
+                    src="/images/logo.png" 
+                    alt="HelloMentor Logo" 
+                    width={24} 
+                    height={24} 
+                    className="h-6 w-6"
+                  />
                   <span className="font-bold font-headline">HelloMentor</span>
                 </Link>
                 <div className="flex flex-col space-y-4 mt-6">
@@ -76,7 +89,13 @@ export function Header() {
               </SheetContent>
             </Sheet>
             <Link href="/" className="flex items-center space-x-2 md:hidden">
-              <Waves className="h-6 w-6 text-primary" />
+              <Image 
+                src="/images/logo.png" 
+                alt="HelloMentor Logo" 
+                width={24} 
+                height={24} 
+                className="h-6 w-6"
+              />
               <span className="font-bold font-headline">HelloMentor</span>
             </Link>
           </div>

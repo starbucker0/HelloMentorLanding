@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Waves } from 'lucide-react';
 
 export function Footer() {
@@ -8,7 +9,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex flex-col space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Waves className="h-6 w-6 text-primary" />
+              <Image 
+                src="/images/logo.png" 
+                alt="HelloMentor Logo" 
+                width={32} 
+                height={32} 
+                className="h-8 w-8"
+              />
               <span className="font-bold font-headline">HelloMentor</span>
             </Link>
             <p className="text-sm text-muted-foreground">
