@@ -10,22 +10,29 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const testimonials = [
   {
-    quote: "This landing page template is a game-changer. The AI copy generator saved me hours of work, and the final result is stunning!",
+    quote: "I don’t know what questions they’ll ask in interviews.",
     name: "Sarah Johnson",
     title: "Founder of TechNova",
     avatar: "https://placehold.co/40x40.png",
     initials: "SJ",
   },
   {
-    quote: "I'm not a designer, but with this template, I was able to create a professional-looking site for my app in just a day. Highly recommended.",
+    quote: "I feel emotionally broken after ghosting.",
     name: "Michael Chen",
     title: "Indie Developer",
     avatar: "https://placehold.co/40x40.png",
     initials: "MC",
   },
   {
-    quote: "The clean layout and mobile-responsive design are top-notch. Our user engagement has visibly increased since we launched the new site.",
+    quote: "I don’t even know what I don’t know.",
     name: "Emily Rodriguez",
+    title: "Marketing Manager at InnovateCo",
+    avatar: "https://placehold.co/40x40.png",
+    initials: "ER",
+  },
+  {
+    quote: "I don’t trust career services or agencies.",
+    name: "Johnny Joestar",
     title: "Marketing Manager at InnovateCo",
     avatar: "https://placehold.co/40x40.png",
     initials: "ER",
@@ -37,9 +44,9 @@ export function Testimonials() {
     <section id="testimonials" className="py-20 md:py-24">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">What Our Users Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">Who is a potential mentee?</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Real stories from developers and marketers who love our template.
+            Real user stories that find mentors useful.
           </p>
         </div>
         <Carousel

@@ -4,23 +4,23 @@ import { BookOpenText, Palette, BarChartHorizontal, Sparkles } from "lucide-reac
 const features = [
   {
     icon: <Sparkles className="w-8 h-8 text-primary" />,
-    title: "AI-Powered Copy",
-    description: "Generate compelling marketing copy instantly with our integrated AI writing tool.",
+    title: "Hyper-specific Matching",
+    description: "Think of it as “Tinder + Duolingo for mentorship” — emotionally intelligent and personalized.",
   },
   {
     icon: <BookOpenText className="w-8 h-8 text-primary" />,
-    title: "SEO-Optimized Blog",
-    description: "Attract organic traffic with a built-in, content-rich blog platform.",
+    title: "AI-assisted Mentorship Journey Design",
+    description: "Mentors get suggested frameworks (“Your mentee is 6 weeks from graduation. Focus on XYZ this week”), so they aren’t just chatting — they’re driving outcomes.",
   },
   {
     icon: <Palette className="w-8 h-8 text-primary" />,
-    title: "Modern UI/UX",
-    description: "A visually appealing, mobile-responsive design that looks great on any device.",
+    title: "Trackable Transformation",
+    description: "Instead of loose “coffee chats,” mentees can set goals (e.g. land 3 interviews, write 1 targeted resume) and track real progress — making impact visible.",
   },
   {
     icon: <BarChartHorizontal className="w-8 h-8 text-primary" />,
-    title: "Easy to Customize",
-    description: "Built with Next.js and Tailwind CSS, making it simple to adapt to your brand.",
+    title: "Mentorship-as-a-Ritual",
+    description: "It’s not transactional. It's social. Weekly prompts, shared reflections, and even group challenges make it sticky.",
   },
 ];
 
@@ -31,7 +31,7 @@ export function Features() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">Key Features</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Everything you need to build and launch your application's website.
+            Everything you need to build a successful career.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

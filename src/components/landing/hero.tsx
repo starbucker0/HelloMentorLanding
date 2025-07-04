@@ -6,11 +6,10 @@ export function Hero() {
     <section className="container grid lg:grid-cols-2 gap-10 items-center py-20 md:py-32">
       <div className="flex flex-col items-start gap-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline leading-tight">
-          Launch Your Web App with a Stunning Landing Page
+          Precision Matching for Real-World Career Readiness
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground">
-          Our template provides everything you need to create a professional,
-          high-converting landing page for your new application.
+          HelloMentor is a mentorship platform designed for international students, offering structured, emotionally-aware, and insider-informed career coaching through AI-assisted mentor-matching and outcome-driven mentorship journeys
         </p>
         <div className="flex gap-4">
           <Button size="lg">Get Mentor for Free</Button>
