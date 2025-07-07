@@ -6,10 +6,11 @@ export function Hero() {
     <section className="container grid lg:grid-cols-2 gap-10 items-center py-20 md:py-32">
       <div className="flex flex-col items-start gap-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline leading-tight">
-          Precision Matching for Real-World Career Readiness
+          No random matches. No awkward convos. No zero outcomes.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground">
-          HelloMentor is a mentorship platform designed for international students, offering structured, emotionally-aware, and insider-informed career coaching through AI-assisted mentor-matching and outcome-driven mentorship journeys
+          Just mentors who get you, powered by AI, not guesswork.<br /> <br />
+          Tired of awkward coffee chats that lead nowhere? <br /> <br />HelloMentor is the first AI-powered mentorship matching platform built for students and young professionals who want real guidance — not generic advice. We ditch the randomness and connect you with mentors who actually get your goals, your background, and your next move. No small talk. No ghosting. Just smart, meaningful connections that move you forward.
         </p>
         <div className="flex gap-4">
           <Button size="lg">Get Mentor for Free</Button>

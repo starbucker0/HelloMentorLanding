@@ -38,25 +38,37 @@ export function Testimonials() {
           </p>
         </div>
         
-        <div className="relative max-w-6xl mx-auto min-h-[420px]">
-          {/* First testimonial - top left */}
-          <div className="absolute top-0 left-0 md:left-16">
-            <TestimonialBubble testimonial={testimonials[0]} />
+        <div className="relative max-w-6xl mx-auto">
+          {/* Mobile: Stack vertically */}
+          <div className="block md:hidden space-y-6">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="w-full max-w-sm mx-auto">
+                <TestimonialBubble testimonial={testimonial} />
+              </div>
+            ))}
           </div>
-          
-          {/* Second testimonial - top right */}
-          <div className="absolute top-8 right-4 md:right-20">
-            <TestimonialBubble testimonial={testimonials[1]} />
-          </div>
-          
-          {/* Third testimonial - middle left */}
-          <div className="absolute top-44 left-8 md:left-36">
-            <TestimonialBubble testimonial={testimonials[2]} />
-          </div>
-          
-          {/* Fourth testimonial - bottom right */}
-          <div className="absolute top-56 right-0 md:right-12">
-            <TestimonialBubble testimonial={testimonials[3]} />
+
+          {/* Desktop: Scattered positioning */}
+          <div className="hidden md:block min-h-[420px]">
+            {/* First testimonial - top left */}
+            <div className="absolute top-0 left-16">
+              <TestimonialBubble testimonial={testimonials[0]} />
+            </div>
+            
+            {/* Second testimonial - top right */}
+            <div className="absolute top-8 right-20">
+              <TestimonialBubble testimonial={testimonials[1]} />
+            </div>
+            
+            {/* Third testimonial - middle left */}
+            <div className="absolute top-44 left-36">
+              <TestimonialBubble testimonial={testimonials[2]} />
+            </div>
+            
+            {/* Fourth testimonial - bottom right */}
+            <div className="absolute top-56 right-12">
+              <TestimonialBubble testimonial={testimonials[3]} />
+            </div>
           </div>
         </div>
       </div>
