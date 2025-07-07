@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
+import { Card, CardContent } from '@/components/ui/card';
 
 const processSteps = [
   {
@@ -60,38 +60,50 @@ export default function ProcessPage() {
           >
             {/* Content */}
             <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-lg">
-                  {step.step}
-                </div>
-                <Badge variant="secondary" className="text-sm">
-                  {step.highlight}
-                </Badge>
-              </div>
-              
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">
-                {step.title}
-              </h2>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                {step.description}
-              </p>
+              <Card className="p-6 shadow-lg">
+                <CardContent className="p-0 space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-lg">
+                      {step.step}
+                    </div>
+                    <Badge variant="secondary" className="text-sm">
+                      {step.highlight}
+                    </Badge>
+                  </div>
+                  
+                  <h2 className="text-2xl md:text-3xl font-bold font-headline">
+                    {step.title}
+                  </h2>
+                  
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    {step.description}
+                  </p>
+                </CardContent>
+              </Card>
             </div>
 
             {/* Screenshot */}
             <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-              <Card className="overflow-hidden shadow-2xl">
-                <CardContent className="p-0">
-                  <Image
-                    src={step.screenshot}
-                    alt={`${step.title} - HelloMentor Process Step ${step.step}`}
-                    width={762}
-                    height={1364}
-                    className="w-auto h-auto object-cover max-h-80 mx-auto"
-                    data-ai-hint={`app screenshot showing ${step.title.toLowerCase()} interface`}
-                  />
-                </CardContent>
-              </Card>
+              <div className="relative mx-auto max-w-sm">
+                {/* iPhone Frame */}
+                <div className="relative bg-black rounded-[3rem] p-2 shadow-2xl">
+                  <div className="relative bg-black rounded-[2.5rem] p-1">
+                    <div className="relative bg-white rounded-[2rem] overflow-hidden">
+                      {/* Dynamic Island */}
+                      <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-28 h-7 bg-black rounded-full z-10"></div>
+                      
+                      {/* Screenshot */}
+                      <Image
+                        src={step.screenshot}
+                        alt={`${step.title} - HelloMentor Process Step ${step.step}`}
+                        width={762}
+                        height={1364}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         ))}

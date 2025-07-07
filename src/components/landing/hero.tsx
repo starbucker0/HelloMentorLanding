@@ -20,7 +20,7 @@ export function Hero() {
       </div>
       <div>
         <Image
-          src="https://mentorship.study.iitm.ac.in/static/mentor_mentee_home.jpeg"
+          src="/images/hero.jpg"
           alt="Hero Image"
           width={600}
           height={400}

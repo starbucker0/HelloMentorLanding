@@ -26,18 +26,13 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/#features" className="text-sm text-muted-foreground hover:text-foreground">
+                <Link href="/features" className="text-sm text-muted-foreground hover:text-foreground">
                   Features
                 </Link>
               </li>
               <li>
                 <Link href="/process" className="text-sm text-muted-foreground hover:text-foreground">
                   How it Works
-                </Link>
-              </li>
-              <li>
-                <Link href="/copy-generator" className="text-sm text-muted-foreground hover:text-foreground">
-                  AI Tool
                 </Link>
               </li>
             </ul>

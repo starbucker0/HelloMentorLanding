@@ -10,10 +10,9 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/#features', label: 'Features' },
+  { href: '/features', label: 'Features' },
   { href: '/#testimonials', label: 'Testimonials' },
   { href: '/process', label: 'How it Works' },
-  { href: '/copy-generator', label: 'AI Tool' },
 ];
 
 // Replace this with your actual Google Form URL
@@ -43,7 +42,7 @@ export function Header() {
                 href={link.href}
                 className={cn(
                   'transition-colors hover:text-foreground/80',
-                  (pathname?.startsWith(link.href) && link.href !== '/#features' && link.href !== '/#testimonials') || (pathname ==='/' && (link.href === '/#features' || link.href === '/#testimonials'))
+                  (pathname?.startsWith(link.href) && link.href !== '/#testimonials') || (pathname ==='/' && link.href === '/#testimonials')
                     ? 'text-foreground'
                     : 'text-foreground/60'
                 )}
