@@ -118,7 +118,7 @@ export default function ProcessPage() {
           Join thousands of professionals who are already transforming their careers with AI-powered mentorship.
         </p>
         <a
-          href="https://forms.gle/wjXgHh9WWozQHtJG7"
+          href="https://forms.gle/Z7DHXXhYWvLVkHrW6"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
