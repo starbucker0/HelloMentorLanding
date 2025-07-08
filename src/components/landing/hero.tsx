@@ -5,8 +5,8 @@ export function Hero() {
   return (
     <section className="container grid lg:grid-cols-2 gap-10 items-center py-20 md:py-32">
       <div className="flex flex-col items-start gap-6">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline leading-tight">
-          No random matches. No awkward convos. No zero outcomes.
+        <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold font-headline leading-tight">
+          <span className="whitespace-nowrap">No random matches.</span> <br /> No awkward convos. <br />No zero outcomes.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground">
           Just mentors who get you, powered by AI, not guesswork.<br /> <br />
