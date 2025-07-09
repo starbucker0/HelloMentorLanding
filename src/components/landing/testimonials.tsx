@@ -32,7 +32,7 @@ export function Testimonials() {
     <section id="testimonials" className="py-16 md:py-20">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">Who is a potential mentee?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">Does this sounds familiar to you?</h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Real thoughts from people looking for mentorship.
           </p>
